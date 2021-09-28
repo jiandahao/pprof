@@ -5,10 +5,11 @@ Docker image for fetching and analyzing golang program.
 ### Easy to use
 
 ```bash
+docker pull jiandahao/pprof:latest
 docker run --rm -it -p 8085:8085 jiandahao/pprof:latest "192.168.1.12:8081/debug/pprof/profile?second=10"
 ```
 
-after running, you will get output like following:
+after running, you will get output as following:
 ```
 Running web UI, visit: <your host addr>:<your host port>
  e.g 192.168.1.12:8085 
